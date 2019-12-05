@@ -25,13 +25,13 @@ int main(){
     sf::RenderWindow window(sf::VideoMode(1229,704),"Robot Trajectory", sf::Style::Close | sf::Style::Resize);
     
     //creation de deux vecteur de type robot et Balle
-    std::vector<Balle> balleV(3) ;
+    std::vector<Balle> balleV(6) ;
     std::vector<Robot> robotV(3) ;
     
     std::cout << "la taille de balleV est  : " << balleV.capacity() <<  std::endl;
     
-    Balle A ;
-    Robot Z ;
+    /*Balle A ;
+    Robot Z ;*/
     
     while (window.isOpen()){
         sf::Event evnt;
@@ -48,11 +48,19 @@ int main(){
         
         
         window.clear(sf::Color::White);
-        window.draw(A.afficherBalle() );
-        window.draw(Z.afficherRobot());
-
-
-
+        
+        
+        
+        /*window.draw(A.afficherBalle() );
+        window.draw(Z.afficherRobot());*/
+        for(int i = 0 ; i< robotV.capacity(); i++)
+        {
+        window.draw(robotV.at(i).afficherRobot());
+        }
+        for(int i = 0 ; i< balleV.capacity(); i++)
+        {
+        window.draw(balleV.at(i).afficherBalle() );
+        }
         
         window.display();
     }
