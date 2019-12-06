@@ -13,6 +13,7 @@
 		048E00E123917F2E008CE143 /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E00DC23917F2E008CE143 /* libsfml-network.2.5.1.dylib */; };
 		048E00E223917F2E008CE143 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E00DD23917F2E008CE143 /* libsfml-graphics.2.5.1.dylib */; };
 		048E00E323917F2E008CE143 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 048E00DE23917F2E008CE143 /* libsfml-window.2.5.1.dylib */; };
+		049410CB239A9B9E009EA4B6 /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 049410C9239A9B9E009EA4B6 /* window.cpp */; };
 		04A89233239947B400B730DA /* balle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A89231239947B400B730DA /* balle.cpp */; };
 		04A8923623997F9300B730DA /* Robot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04A8923423997F9200B730DA /* Robot.cpp */; };
 /* End PBXBuildFile section */
@@ -37,10 +38,13 @@
 		048E00DC23917F2E008CE143 /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "ExternalLibraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
 		048E00DD23917F2E008CE143 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "ExternalLibraries/SFML/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
 		048E00DE23917F2E008CE143 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "ExternalLibraries/SFML/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		049410C9239A9B9E009EA4B6 /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		049410CA239A9B9E009EA4B6 /* window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
 		04A89231239947B400B730DA /* balle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = balle.cpp; sourceTree = "<group>"; };
 		04A89232239947B400B730DA /* balle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = balle.hpp; sourceTree = "<group>"; };
 		04A8923423997F9200B730DA /* Robot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Robot.cpp; sourceTree = "<group>"; };
 		04A8923523997F9300B730DA /* Robot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Robot.hpp; sourceTree = "<group>"; };
+		04A892372399DAE600B730DA /* balle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +83,10 @@
 		048E00D123917E4A008CE143 /* ROBOT_SMLF */ = {
 			isa = PBXGroup;
 			children = (
+				04A892372399DAE600B730DA /* balle.png */,
 				048E00D223917E4A008CE143 /* main.cpp */,
+				049410C9239A9B9E009EA4B6 /* window.cpp */,
+				049410CA239A9B9E009EA4B6 /* window.hpp */,
 				04A89231239947B400B730DA /* balle.cpp */,
 				04A89232239947B400B730DA /* balle.hpp */,
 				04A8923423997F9200B730DA /* Robot.cpp */,
@@ -160,6 +167,7 @@
 				04A89233239947B400B730DA /* balle.cpp in Sources */,
 				04A8923623997F9300B730DA /* Robot.cpp in Sources */,
 				048E00D323917E4A008CE143 /* main.cpp in Sources */,
+				049410CB239A9B9E009EA4B6 /* window.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
