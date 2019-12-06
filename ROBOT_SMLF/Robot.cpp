@@ -2,7 +2,7 @@
 //  Robot.cpp
 //  ROBOT_SMLF
 //
-//  Created by mac on 05/12/2019.
+//  Created by Achraf CHAFAA on 05/12/2019.
 //  Copyright © 2019 mac. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 #include <cstdlib>
 
 // Constructeur --> initialisation de la position ( aléatoire ) du robot et de son size
-Robot::Robot() : m_cordinateR((static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1000))),(static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/700)))), m_sizeR(60, 60)
+Robot::Robot() : m_cordinateR((static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1000))+1),(static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/700)))+1), m_sizeR(60, 60)
 {
     //initialisation  déjà  faite !
 }

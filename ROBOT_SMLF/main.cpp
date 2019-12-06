@@ -27,8 +27,26 @@ int main(){
     //creation de deux vecteur de type robot et Balle
     std::vector<Balle> balleV(6) ;
     std::vector<Robot> robotV(3) ;
+    std::vector<float> distanceV ;
     
-    std::cout << "la taille de balleV est  : " << balleV.capacity() <<  std::endl;
+    for(int i = 0 ; i < robotV.capacity() ; i++ ){
+        
+        for(int j = 0 ; j < balleV.capacity(); j++) {
+            
+            float distance ;
+            distance = distance_function(robotV.at(i).afficherCordinateR(), balleV.at(j).afficherCordinatesB() );
+            
+            robotV.at(i).m_distanceR.push_back(distance) ;
+            //std::cout <<" la distance est : "<< distance << std::endl;
+            
+        }
+        
+    }
+    
+    // afficher le vecteur de distance calculé du premier robot 
+    for (auto it = robotV.at(0).m_distanceR.begin(); it != robotV.at(0).m_distanceR.end(); ++it) {
+            std::cout << *it << std::endl;
+    }
     
     /*Balle A ;
     Robot Z ;*/
@@ -62,6 +80,7 @@ int main(){
         window.draw(balleV.at(i).afficherBalle() );
         }
         
+
         window.display();
     }
 }

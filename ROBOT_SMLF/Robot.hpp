@@ -9,6 +9,7 @@
 #ifndef Robot_hpp
 #define Robot_hpp
 #include <SFML/Graphics.hpp>
+#include <vector>
 
 #include <stdio.h>
 
@@ -27,6 +28,8 @@ private :
     //déclaration des attributs 
     sf::Vector2f m_cordinateR;
     sf::Vector2f m_sizeR;
+public :
+    std::vector<float> m_distanceR ;
     
 };
 

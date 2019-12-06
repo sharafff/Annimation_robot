@@ -2,7 +2,7 @@
 //  balle.cpp
 //  ROBOT_SMLF
 //
-//  Created by mac on 05/12/2019.
+//  Created by Achraf CHAFAA on 05/12/2019.
 //  Copyright © 2019 mac. All rights reserved.
 //
 
@@ -12,7 +12,7 @@
 #include <cstdlib>
 
 
-Balle::Balle() : m_cordinateB((static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1000))),(static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/700)))) , m_rayon(15)
+Balle::Balle() : m_cordinateB((static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1000)) +1 ),(static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/700))) +1) , m_rayon(15)
 {
     //Rien à mettre dans le corps du constructeur, tout a déjà été fait !
 }
